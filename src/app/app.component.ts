@@ -8,6 +8,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
       <h1>{{title}}</h1>
       <app-task-form></app-task-form>
       <app-todo-list></app-todo-list>
+      <footer>Yannick Simard - 2023</footer>
     </div>
   `
 })

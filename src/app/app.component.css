@@ -1,3 +1,7 @@
 .container {
     background-color: #84A59D;
 }
+
+button {
+    cursor: pointer;
+}

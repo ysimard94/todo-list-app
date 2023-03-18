@@ -1,0 +1,44 @@
+ul {
+    padding: 0;
+}
+
+li {
+    margin-left: 32px;
+    margin-right: 16px;
+    list-style: circle;
+    list-style-position: ;
+}
+
+li div {
+    display: flex;
+    align-items: center;
+    padding-block: 8px;
+    border-bottom: 1px solid lightgrey;
+}
+
+li div span {
+    flex-grow: 1;
+}
+
+.btn-done {
+    background-color: #67b98c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-done:hover {
+    background-color: #4e9a6f;
+}
+
+.btn-delete {
+    background-color: #da5452;
+    color: white;
+    border: none;
+    margin-left: 12px;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #b53d3b;
+}

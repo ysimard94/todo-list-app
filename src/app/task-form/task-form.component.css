@@ -15,7 +15,6 @@ input {
 
 button {
     background-color: aliceblue;
-    cursor: pointer;
     border: 1px solid #ccc;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
