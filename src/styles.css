@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #84A59D;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #84A59D;
+    text-align: center;
+    padding-top: 22px;
+}
+
+h2 {
+    color: #F28482;
+}
+.container {
+    margin-inline: auto;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+.container h1, h2 {
+    text-align: center;
+}

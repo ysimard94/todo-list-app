@@ -4,8 +4,11 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 @Component({
   selector: 'app-root',
   template: `
-    <h1>To-do List App</h1>
-    <app-todo-list></app-todo-list>
+    <div class="container">
+      <h1>{{title}}</h1>
+      <app-task-form></app-task-form>
+      <app-todo-list></app-todo-list>
+    </div>
   `
 })
 export class AppComponent {
