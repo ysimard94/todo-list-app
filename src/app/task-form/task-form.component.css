@@ -1,20 +1,23 @@
 div {
     display: flex;
+    flex-direction: column;
     margin-inline: 16px;
     padding-bottom: 16px;
     border-bottom: 2px solid lightgrey;
 }
 
 input {
-    flex-grow: 1;
     padding: 8px;
+    font-size: 1.2rem;
     border: 1px solid #ccc;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
 button {
-    background-color: aliceblue;
+    background-color: #84A59D;
+    font-size: 1.2rem;
+    color:white;
     border: 1px solid #ccc;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;

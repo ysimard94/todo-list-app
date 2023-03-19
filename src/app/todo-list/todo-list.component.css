@@ -44,3 +44,8 @@ li span {
 .btn-delete:hover {
     background-color: #b53d3b;
 }
+
+.done {
+    text-decoration: line-through;
+    color: grey;
+}

@@ -8,7 +8,7 @@ import { Task } from './task-form/task';
     <div class="container">
       <h1>{{title}}</h1>
       <app-task-form (taskAdded)="addTask($event)"></app-task-form>
-      <app-todo-list [tasks]="tasks" (deletedTask)="deleteTask($event)"></app-todo-list>
+      <app-todo-list [tasks]="tasks" (deletedTask)="deleteTask($event)" (taskDone)="taskComplete($event)"></app-todo-list>
       <footer>Yannick Simard - 2023</footer>
     </div>
   `
@@ -28,6 +28,15 @@ export class AppComponent {
   addTask(description: string) {
     this.tasks.unshift({id: this.id, description: description, done: false });
     this.id++;
+  }
+
+  taskComplete(id: number) {
+    this.tasks = this.tasks.map(task => {
+      if (task.id === id) {
+        task.done = !task.done;
+      }
+      return task;
+    });
   }
 
   deleteTask(id: number) {
