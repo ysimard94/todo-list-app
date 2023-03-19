@@ -6,17 +6,19 @@ li {
     margin-left: 32px;
     margin-right: 16px;
     list-style: circle;
-    list-style-position: ;
 }
 
-li div {
+li {
     display: flex;
     align-items: center;
     padding-block: 8px;
+}
+
+li:not(:last-child) {
     border-bottom: 1px solid lightgrey;
 }
 
-li div span {
+li span {
     flex-grow: 1;
 }
 

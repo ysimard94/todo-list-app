@@ -1,5 +1,5 @@
 <h2>Add your task</h2>
-<form action="">
-    <input type="text">
-    <button>Add Task</button>
-</form>
+<div>
+<input [(ngModel)]="description" placeholder="New task" type="text">
+<button (click)="addTask(description)">Add task</button>
+</div>
