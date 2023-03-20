@@ -11,6 +11,7 @@ li {
 li {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-block: 8px;
 }
 
@@ -18,9 +19,33 @@ li:not(:last-child) {
     border-bottom: 1px solid lightgrey;
 }
 
-li span {
+li p {
+    position: relative;
     flex-grow: 1;
+    margin-right: 10px;
 }
+
+.not-done {
+    display: none;
+}
+
+.border-done {
+    animation: 180ms linear lineThrough forwards;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    border-bottom: 2px solid lightgrey;
+}
+
+@keyframes lineThrough {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 
 .btn-done {
     background-color: #67b98c;
@@ -46,6 +71,5 @@ li span {
 }
 
 .done {
-    text-decoration: line-through;
     color: grey;
 }

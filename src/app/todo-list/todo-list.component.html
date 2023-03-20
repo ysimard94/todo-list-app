@@ -4,7 +4,9 @@
     <li *ngIf="tasks.length === 0">You have no tasks.</li>
     <!-- Sinon, afficher la liste des tâches -->
     <li class="task" *ngFor="let task of tasks">
-        <span [class.done]="task.done == true">{{ task.description }}</span>
+        <p [class.done]="task.done == true">{{ task.description }}<span [ngClass]="{'not-done': task.done == false,
+                    'border-done': task.done == true}"></span></p>
+        
         <button class="btn-done" (click)="taskComplete(task.id)">Done</button>
         <button class="btn-delete" (click)="deleteTask(task.id)">Delete</button>
     </li>
